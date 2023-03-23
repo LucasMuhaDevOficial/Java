@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+public class ConversorDeMoeda {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        double taxaDeCambio = 5.60; // Taxa de câmbio atual USD/BRL
+        System.out.print("Digite a quantia em dólares americanos: ");
+        double dolares = scanner.nextDouble();
+        double reais = dolares * taxaDeCambio;
+        System.out.println("$" + dolares + " = R$" + reais);
+    }
+}
